@@ -1,2 +1,0 @@
-# Charlescoding.github.io
-hexo
