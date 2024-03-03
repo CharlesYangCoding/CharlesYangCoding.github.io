@@ -279,7 +279,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          379 字
+          422 字
         
       </span>
     
@@ -352,6 +352,20 @@
 <p>注意：第28行的下载地址一定要修改成自己的地址，否则无法下载图片！<br>按照提示来输入就可以，输出一长串网址属正常现象。希望大佬们可以在评论区指点指点😊!<br>(评论时，可能会显示disqus加载失败，请开启VPN或代理重试)</p>
 <p>(希望大佬们也能够指点一下如何不开代理或VPN使用disqus，我用的是hexo)</p>
 
+      <script>
+        window.disqusProxy={
+          shortname: 'ciqu',
+          username: 'ciqu',
+          server: 'disqus-proxy.ycwalker.com',
+          port: 443,
+          adminAvatar: '/avatars/admin-avatar.jpg',
+          identifier: '2024/02/07/下载百度图片/',
+        };
+        window.disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = window.disqusProxy.identifier;
+        };
+      </script>
                 
               </div>
             
@@ -453,7 +467,7 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2024/02/24/GPT%E9%95%9C%E5%83%8F%E5%88%86%E4%BA%AB%EF%BC%8C%E5%BF%AB%E9%80%9F%E4%B8%8A%E8%BD%A6%EF%BC%81/" title="GPT镜像分享，快速上车！">
+                      <a href="/2024/02/28/GPT%E9%95%9C%E5%83%8F%E5%88%86%E4%BA%AB%EF%BC%8C%E5%BF%AB%E9%80%9F%E4%B8%8A%E8%BD%A6%EF%BC%81/" title="GPT镜像分享，快速上车！">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">GPT镜像分享，快速上车！</span>
                         <span class="visible-mobile">上一篇</span>
@@ -480,7 +494,13 @@
     <article id="comments" lazyload>
       
   <div class="disqus" style="width:100%">
-    <div id="disqus_thread"></div>
+    
+      <script src="//cdn.bootcss.com/react/16.0.0/umd/react.production.min.js"></script>
+      <script src="//cdn.bootcss.com/react-dom/16.0.0/umd/react-dom.production.min.js"></script>
+      <script src="//cdn.bootcss.com/fetch/2.0.3/fetch.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/blockies-identicon@0.1.0/blockies.min.js"></script>
+      <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <div id="disqus_proxy_thread"><script src="/scripts/hexo-disqus-proxy-primary.js" async></script></div>
     
       <script>
         Fluid.utils.loadComments('#disqus_thread', function() {

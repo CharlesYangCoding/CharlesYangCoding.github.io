@@ -277,7 +277,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          42 字
+          81 字
         
       </span>
     
@@ -351,6 +351,20 @@
 <p>This achievement became a source of pride for me—an indelible mark in my journey, reminding me of the rewards that come with dedication and support. It also reinforced the significance of pursuing one’s passions with enthusiasm.</p>
 <p>Now, I’m curious to know if you have a moment in your life that fills you with pride. Would you be willing to share it with me?</p>
 
+      <script>
+        window.disqusProxy={
+          shortname: 'ciqu',
+          username: 'ciqu',
+          server: 'disqus-proxy.ycwalker.com',
+          port: 443,
+          adminAvatar: '/avatars/admin-avatar.jpg',
+          identifier: '2024/01/24/One Thing I'm Proud of/',
+        };
+        window.disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = window.disqusProxy.identifier;
+        };
+      </script>
                 
               </div>
             
@@ -486,7 +500,13 @@
     <article id="comments" lazyload>
       
   <div class="disqus" style="width:100%">
-    <div id="disqus_thread"></div>
+    
+      <script src="//cdn.bootcss.com/react/16.0.0/umd/react.production.min.js"></script>
+      <script src="//cdn.bootcss.com/react-dom/16.0.0/umd/react-dom.production.min.js"></script>
+      <script src="//cdn.bootcss.com/fetch/2.0.3/fetch.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/blockies-identicon@0.1.0/blockies.min.js"></script>
+      <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <div id="disqus_proxy_thread"><script src="/scripts/hexo-disqus-proxy-primary.js" async></script></div>
     
       <script>
         Fluid.utils.loadComments('#disqus_thread', function() {
