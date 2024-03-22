@@ -501,7 +501,7 @@
       Fluid.utils.createCssLink('/css/gitalk.css')
       Fluid.utils.createScript('https://lib.baomitu.com/gitalk/1.8.0/gitalk.min.js', function() {
         var options = Object.assign(
-          {"clientID":"be4c33661338d06fa2e9","clientSecret":"8eed29c8f9bdd680ca51f3a3170ae83b7df68b4f","repo":"Comments","owner":"CharlesYangCoding","admin":["CharlesYangCoding"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
+          {"clientID":"be4c33661338d06fa2e9","clientSecret":"8eed29c8f9bdd680ca51f3a3170ae83b7df68b4f","repo":"Comments","owner":"CharlesYangCoding","admin":["CharlesYangCoding"],"language":"zh-CN","labels":["<%= md5(page.path) %>"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
             id: 'c3e9336ff9dd1cbc7b2ec3611bf071d3'
           }
