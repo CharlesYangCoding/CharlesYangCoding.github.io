@@ -6,14 +6,14 @@ WORLDWIDTH = 1500  #世界宽度
 WORLDHEIGHT = 1500  #世界高度
 HALFWWIDTH = int(WORLDWIDTH//2)
 HALFWHEIGHT = int(WORLDHEIGHT//2)
-WIDTH = 1000  #窗口宽度
-HEIGHT = 700  #窗口高度
+WIDTH = 1400  #窗口宽度
+HEIGHT = 800  #窗口高度
 CENTERWIDTH = int(WIDTH//2)
 CENTERHEIGHT = int(HEIGHT//2)
 FPS = 60  #帧率
 SPLITBASE = 1.01 #分裂基数
 pi = math.pi
-INITIALWEIGHT = 20  #初始重量
+INITIALWEIGHT = 900  #初始重量
 
 #定义颜色变量
 LIGHTBLACK = (10,51,71)
@@ -110,7 +110,7 @@ class OtherBall():
     def __init__(self,xpos,ypos,weight,color):
         self.xpos = xpos
         self.ypos = ypos
-        self.weight = weight
+        self.weight = 100
         self.radius = weightToRadius(weight)
         self.speed = weightToSpeed(weight)
         self.color = color
@@ -161,7 +161,7 @@ def main():
     otherBalls = []
     foodlist = []
 
-    for i in range(500): #创建其他小球
+    for i in range(1000): #创建其他小球
         xpos = random.randint(-HALFWWIDTH, HALFWWIDTH)
         ypos = random.randint(-HALFWHEIGHT, HALFWHEIGHT)
         otherb = OtherBall(xpos,ypos,INITIALWEIGHT,randomColor())
@@ -301,7 +301,7 @@ def weightToSpeed(weight):#重量转换为速度
     if weight < 8000:
         return math.floor(-0.02*weight+200)
     elif weight >=8000:
-        return 40  #最低速度为40
+        return 1000  #最低速度为40
 
 def weightToRadius(weight):  #将小球的重量转化为半径
     if weight < 100:
